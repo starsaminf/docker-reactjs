@@ -38,5 +38,7 @@ alias npm='docker run --rm -it -u `id -u $USER` -v $(pwd):/src  -w /src -p 4000:
 
 ```
 
+## Update
+Update available 5.6.0 → 6.0.1
 
 

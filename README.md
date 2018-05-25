@@ -12,7 +12,16 @@ alias npm='docker run --rm -it -u `id -u $USER` -v $(pwd):/src  -w /src -p 3000:
 
 alias create-react-app='docker run --rm -it -u `id -u $USER` -v $(pwd):/src  -w /src starsaminf/reactjs create-react-app'
 
+alias ng='docker run --rm -it -u `id -u $USER`  -v $(pwd):/src  -w /src -p  3000:3000 starsaminf/reactjs ng'
+
 ```
+Para Angular
+```bash
+ng new proyect_name
+cd proyect_name
+ng serve --port 3000 --host 0.0.0.0
+```
+
 
 De esta forma ya podemos usar desde la consola npm o create-react-app y ni cuenta nos daremos que estamos usando docker
 
